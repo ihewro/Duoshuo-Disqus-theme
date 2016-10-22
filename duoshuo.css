@@ -795,7 +795,7 @@ form#commenthw {
 }
 
 .ds-children li.ds-post:last-child {
-    padding: 10px!important;
+    padding-bottom: 10px !important;
 }
 
 #ds-thread #ds-reset .ds-textarea-wrapper textarea:focus {
