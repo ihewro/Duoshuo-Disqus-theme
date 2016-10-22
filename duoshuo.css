@@ -1,4 +1,9 @@
 @charset "utf-8";
+/**
+ * Name: 仿disqus的多说风格代码
+ * Author: 友人C
+ * Author URI: http://www.ihewro.com
+**/
 
 /*bluebox自带css*/
 #ds-ssr {
@@ -778,11 +783,19 @@ form#commenthw {
     color: #2a2e2e;
     resize: none;
     width: 96%;
-    height: 80px!important;
+    height: 63px!important;
     line-height: 15px;
     font-size: 14px;
     padding: 6px 10px 8px;
     transition: all 0.15s ease-in-out;
+}
+
+.ds-children .ds-post {
+    padding: 0px 0px 17px 0px!important;
+}
+
+.ds-children li.ds-post:last-child {
+    padding: 10px!important;
 }
 
 #ds-thread #ds-reset .ds-textarea-wrapper textarea:focus {
@@ -823,7 +836,7 @@ form#commenthw {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 36px;
+    height: 34px;
     transition: opacity linear .2s;
 }
 
@@ -910,7 +923,7 @@ form#commenthw {
     font-weight: 500;
     transition: background .2s;
     text-shadow: none;
-    height: 38px;
+    height: 36px;
     width: 90px;
     font-size: 14px;
     vertical-align: middle;
@@ -934,11 +947,12 @@ form#commenthw {
 #ds-thread #ds-reset .ds-comments-info {
 	width: 100%;
 	font-size: 14px;
-	margin-top: 10px;
+	margin-top: 20px;
 	padding: 0px 0;
 	line-height: 25px;
 	position: relative;
 	border-bottom: 2px solid #e7e9ee;
+	margin-bottom: 30px;
 }
 
 #ds-thread #ds-reset .ds-sort {
@@ -1029,7 +1043,7 @@ form#commenthw {
 	clear: both;
 	border-top: 0;
 	margin: 0;
-	padding: 0px 0px 12px 0px;
+	padding: 0px 0px 20px 0px;
 	list-style: none
 }
 
@@ -2377,10 +2391,10 @@ form#commenthw {
 
 
 #ds-thread #ds-reset .ds-comments{
-	border-bottom: 2px solid #e7e9ee!important;	
+	border-bottom: none!important;	
 }
 #ds-thread #ds-reset .ds-comments,#ds-thread #ds-reset .ds-paginator {
-	border-bottom: 2px solid #e7e9ee;
+	border-bottom: none;
 }
 
 #ds-thread #ds-reset a.ds-unread-comments-count {
@@ -2637,7 +2651,7 @@ form#commenthw {
 #ds-thread #ds-reset .ds-toolbar-button.ds-add-emote,#ds-thread #ds-reset .ds-toolbar-button.ds-add-image {
     display: inline-block;
     background: 0;
-    margin-top: 7px
+    margin-top: 6px
 }
 #ds-thread #ds-reset .ds-toolbar-button.ds-add-emote:before {
     font: normal normal normal 20px/1 FontAwesome;
@@ -2749,7 +2763,7 @@ span.ua{
 }
 
 li.ds-post:first-child{
-	margin-top:20px!important
+	margin-top:17px!important
 }
 
 div#duoshuoua {
@@ -2996,7 +3010,38 @@ img.paopao,#ds-thread #ds-reset .ds-comment-body img.paopao {
 }/*未读消息气泡中的字体设置*/
 /*未读消息气泡结束*/
 
-
-
-
-
+@media only screen and (max-width: 400px){
+#ds-reset .ds-avatar img{
+	width: 43px;
+    height: 43px;
+}
+#ds-thread #ds-reset .ds-replybox .ds-avatar img{
+	width: 43px;
+    height: 43px;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper textarea{
+    height: 50px !important;
+}
+#ds-thread #ds-reset .ds-post-options{
+    height: 30px;
+}
+#ds-thread #ds-reset .ds-post-button{
+	height: 32px;
+}
+#ds-thread #ds-reset .ds-post-button{
+    width: 78px;
+}
+#ds-thread #ds-reset .ds-toolbar-button{
+    margin-top: 2px!important;
+}
+#ds-thread #ds-reset li.ds-post{
+	padding: 0 0 28px 0;
+}
+#ds-thread #ds-reset .ds-comments-info{
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+}
+.ds-comments-tab-duoshuo .ds-highlight {
+    color: #2a2e2e!important;
+}
