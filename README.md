@@ -1,6 +1,10 @@
 ## 一个关于仿disqus的多说风格css
 
 ## 使用说明
+* 加载图片地址：
+![loading](http://a.disquscdn.com/next/embed/assets/img/loader.5cc23909da9c4a9874500d7a85c4125f.gif)
+你可以存到你的空间上面去。
+在css里面搜索替换一下就好了！
 
 * comment.php 
 
@@ -27,7 +31,6 @@ var duoshuoQuery = {short_name:"hewro",theme:"none"};
 this.el.find(".ds-comments-tab-" + a).html(this.el.hasClass("ds-narrow") ? '<span class="ds-highlight">' + i + '</span>' + s[a][1]: (i ? '<span class="ds-highlight">' + i + "</span>": "0") + s[a][1])
 ```
 (这个改动是让手机端的几条评论的地方不是只有数字而是和电脑端一样的显示)
-
 
 OK!
 
